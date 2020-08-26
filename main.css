@@ -3,6 +3,13 @@ body {
     --accent-blue: #1fcecb;
 }
 
+#sectionA {
+    background-color: var(--accent-blue);
+    margin-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
 h1 {
     font-family: 'Open Sans', sans-serif;
     font-size: 20px;
