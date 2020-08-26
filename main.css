@@ -1,10 +1,21 @@
 
 body {
     --accent-blue: #1fcecb;
+    --brown-yellow: #FEB809;
+    --brown-brown: #342216;
+    --brown-red: #FB0007;
+    --ivy-dg: #0C5A37;
+    --ivy-lg: #3B9476;
+
+
 }
 
 #sectionA {
-    background-color: var(--accent-blue);
+    background: 
+    linear-gradient(
+        rgba(255, 0, 0, 0.45), 
+        rgba(255, 0, 0, 0.45)),
+        url(images/brown-splash.jpg);
     margin-top: 20px;
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -31,7 +42,8 @@ p {
 }
 
 .navbar {
-    background-color: var(--accent-blue);
+    background-color: var(--brown-red);
+    color: white;
 }
 
 .card {
@@ -64,8 +76,23 @@ p {
     }
 }
 
+.card-img {
+    height: 30%;
+    width: 30%;
+}
+
 #button-one {
-    background-color: red;
+    background-color: var(--brown-brown);
+    border: none;
+}
+
+#button-two {
+    background-color: var(--brown-brown);
+    border: none;
+}
+
+#button-three {
+    background-color: var(--brown-brown);
     border: none;
 }
 
@@ -162,9 +189,16 @@ p {
     margin-right: 10%;
     margin-left: 10%;
 }
+
+.carb-info {
+    color: white;
+}
+
 .jos {
     margin: 10px;
     border-radius: 4px;
+    height: 100px;
+    width: 200px;
 }
 .footer{
     background-color: black;
