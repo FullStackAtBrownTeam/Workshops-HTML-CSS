@@ -1,3 +1,119 @@
+
+.navbar-brand {
+    animation: fadeDown 1000ms forwards;
+    opacity: 0;    
+}
+.nav-item:hover {
+    color: black;
+}
+.fsab {
+    font-family: "Roboto Slab", serif;
+}
+@keyframes fadeDown{
+    from {
+        opacity: 0;
+        transform: translateY(-20px)
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px)
+    }
+}
 #sectionA-img {
     background-image: url(really%2520shitty%2520test%2520assets/Screen%20Shot%202019-01-13%20at%2011.04.04%20AM.png);
+    animation: fromLeft 800ms forwards;
+    animation-delay: 400ms;
+    opacity: 0;
+}
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+#sectionA-txt{
+    animation: fromRight 800ms forwards;
+    animation-delay: 500ms;
+    opacity: 0;
+}
+@keyframes fromRight{
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+#sectionB {
+    animation: fadeIn 800ms forwards;
+    animation-delay: 600ms;
+    opacity: 0;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.feedback {
+    display: inline-block;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: left;
+    
+}
+.feedback h3 {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.feedback input[type=text]{
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 400px;
+    outline: none;
+}
+.feedback textarea {
+    width: 400px;
+    height: 200px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    outline: none;
+}
+.feedback button{
+    width: 400px;
+    color:white;
+    border: #007bff;
+    background-color: #007bff;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 4px;
+    margin-left: 25%;
+    margin-right: 25%;
+    outline: none;
+}
+#josimgs{
+    margin-right: 10%;
+    margin-left: 10%;
+}
+.jos {
+    margin: 10px;
+    border-radius: 4px;
+}
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    margin-bottom: -10px;
 }
