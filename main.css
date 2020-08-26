@@ -1,4 +1,41 @@
 
+body {
+    --accent-blue: #1fcecb;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h2 {
+    font-weight: 800;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+}
+
+.navbar {
+    background-color: var(--accent-blue);
+}
+
+.card {
+    border-color: black;
+    border-radius: 1px;
+}
+
+.fsab-button {
+    background-color: var(--accent-blue);
+}
+
 .navbar-brand {
     animation: fadeDown 1000ms forwards;
     opacity: 0;    
@@ -63,12 +100,21 @@
         opacity: 1;
     }
 }
+
+#feedback {
+    border-radius: 2px;
+}
 .feedback {
     display: inline-block;
     margin-left: 25%;
     margin-right: 25%;
     text-align: left;
     
+}
+
+.form-field {
+    border-radius: 1px;
+    border-style: dashed;
 }
 .feedback h3 {
     margin-left: 25%;
