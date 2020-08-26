@@ -63,6 +63,12 @@ p {
         transform: translateY(0px)
     }
 }
+
+#button-one {
+    background-color: red;
+    border: none;
+}
+
 #sectionA-img {
     background-image: url(really%2520shitty%2520test%2520assets/Screen%20Shot%202019-01-13%20at%2011.04.04%20AM.png);
     animation: fromLeft 800ms forwards;
@@ -112,11 +118,7 @@ p {
     border-radius: 2px;
 }
 .feedback {
-    display: inline-block;
-    margin-left: 25%;
-    margin-right: 25%;
-    text-align: left;
-    
+    margin: auto;
 }
 
 .form-field {
