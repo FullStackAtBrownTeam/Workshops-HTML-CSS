@@ -1,11 +1,10 @@
-
 body {
     --accent-blue: #1fcecb;
-    --brown-yellow: #FEB809;
+    --brown-yellow: #feb809;
     --brown-brown: #342216;
-    --brown-red: #FB0007;
-    --ivy-dg: #0C5A37;
-    --ivy-lg: #3B9476;
+    --brown-red: #fb0007;
+    --ivy-dg: #0c5a37;
+    --ivy-lg: #3b9476;
     --new-red: #f31548;
     --gold-yellow: #bb9b6a;
     --brown-gray: #b0afb4;
@@ -14,20 +13,19 @@ body {
 img {
     border-radius: 4px;
 }
+
 a {
     outline: none;
     box-shadow: inset 0 0 0 0 var(--new-red);
-    transition: ease-out .6s; 
+    transition: ease-out 0.6s;
 }
-a:hover{
+
+a:hover {
     box-shadow: inset 300px 0 0 0 var(--new-red);
 }
 
 #sectionA {
-    background: 
-    linear-gradient(
-        rgba(255, 0, 0, 0.45), 
-        rgba(255, 0, 0, 0.45)),
+    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
         url(images/brown-splash.jpg);
     margin-top: 20px;
     padding-bottom: 20px;
@@ -35,23 +33,23 @@ a:hover{
 }
 
 h1 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 20px;
     font-weight: 300;
 }
 
 h2 {
     font-weight: 800;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-size: 14px;
 }
 
 h3 {
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 p {
-    font-family: 'Lato', sans-serif;
+    font-family: "Lato", sans-serif;
 }
 
 .navbar {
@@ -70,26 +68,30 @@ p {
 
 .navbar-brand {
     animation: fadeDown 1000ms forwards;
-    opacity: 0;    
+    opacity: 0;
 }
-.nav-item a{
-    transition: .1s;
+
+.nav-item a {
+    transition: 0.1s;
 }
+
 .nav-item:hover {
     color: black;
     font-size: 30px;
 }
+
 .fsab {
     font-family: "Roboto Slab", serif;
 }
-@keyframes fadeDown{
+
+@keyframes fadeDown {
     from {
         opacity: 0;
-        transform: translateY(-20px)
+        transform: translateY(-20px);
     }
     to {
         opacity: 1;
-        transform: translateY(0px)
+        transform: translateY(0px);
     }
 }
 
@@ -112,8 +114,9 @@ p {
     background-color: var(--brown-brown);
     border: none;
     outline: none;
-    transition: .4s;
+    transition: 0.4s;
 }
+
 #button-three:hover {
     background-color: var(--gold-yellow);
 }
@@ -124,6 +127,7 @@ p {
     animation-delay: 400ms;
     opacity: 0;
 }
+
 @keyframes fromLeft {
     from {
         opacity: 0;
@@ -134,12 +138,14 @@ p {
         transform: translateX(0px);
     }
 }
-#sectionA-txt{
+
+#sectionA-txt {
     animation: fromRight 800ms forwards;
     animation-delay: 500ms;
     opacity: 0;
 }
-@keyframes fromRight{
+
+@keyframes fromRight {
     from {
         opacity: 0;
         transform: translateX(20px);
@@ -149,11 +155,13 @@ p {
         transform: translateX(0px);
     }
 }
+
 #sectionB {
     animation: fadeIn 800ms forwards;
     animation-delay: 600ms;
     opacity: 0;
 }
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -167,9 +175,11 @@ p {
     margin-left: 20%;
     margin-right: 20%;
 }
+
 #feedback {
     border-radius: 2px;
 }
+
 .feedback {
     margin-left: 10%;
     margin-right: 10%;
@@ -179,11 +189,13 @@ p {
     border-radius: 1px;
     border-style: dashed;
 }
+
 .feedback h3 {
     margin-left: 25%;
     margin-right: 25%;
 }
-.feedback input[type=text]{
+
+.feedback input[type="text"] {
     margin-left: 25%;
     margin-right: 25%;
     margin-top: 10px;
@@ -191,6 +203,7 @@ p {
     width: 400px;
     outline: none;
 }
+
 .feedback textarea {
     width: 400px;
     height: 200px;
@@ -200,9 +213,10 @@ p {
     margin-bottom: 10px;
     outline: none;
 }
-.feedback button{
+
+.feedback button {
     width: 400px;
-    color:white;
+    color: white;
     border: #007bff;
     background-color: #007bff;
     border-radius: 4px;
@@ -212,7 +226,8 @@ p {
     margin-right: 25%;
     outline: none;
 }
-#josimgs{
+
+#josimgs {
     margin-right: 10%;
     margin-left: 10%;
 }
@@ -227,6 +242,7 @@ p {
     height: 100px;
     width: 200px;
 }
+
 .watermark {
     background-color: black;
     color: white;
@@ -235,10 +251,12 @@ p {
     margin-bottom: -10px;
     font-family: "Roboto Slab", serif;
 }
+
 .watermark a {
     color: white;
     text-decoration: none;
 }
+
 .watermark a:hover {
     color: white;
     text-decoration: none;
