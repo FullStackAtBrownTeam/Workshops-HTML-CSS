@@ -1,6 +1,6 @@
 # Hack@Home Workshop - HTML/CSS
 
-This is the repository for the [Hack@Home](http://hackathome.org/) HTML/CSS workshop, led by Lucas Gelfond and Ethan Asis. The video companion to this repository will be posted [here]()
+This is the repository for the [Hack@Home](http://hackathome.org/) HTML/CSS workshop, led by Lucas Gelfond and Ethan Asis. The video companion to this repository will be posted [here](https://github.com/FullStackAtBrownTeam/Workshops-HTML-CSS/blob/master)
 
 ## Dev Setup
 
