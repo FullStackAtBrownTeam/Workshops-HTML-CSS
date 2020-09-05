@@ -1,263 +1,171 @@
 body {
-    --accent-blue: #1fcecb;
-    --brown-yellow: #feb809;
-    --brown-brown: #342216;
-    --brown-red: #fb0007;
-    --ivy-dg: #0c5a37;
-    --ivy-lg: #3b9476;
-    --new-red: #f31548;
-    --gold-yellow: #bb9b6a;
-    --brown-gray: #b0afb4;
+    --fsab-brown: #342216;
+    --fsab-gold: #bb9b6a;
+    --fsab-red: #f31548;
 }
 
-img {
-    border-radius: 4px;
-}
-
-a {
-    outline: none;
-    box-shadow: inset 0 0 0 0 var(--new-red);
-    transition: ease-out 0.6s;
-}
-
-a:hover {
-    box-shadow: inset 300px 0 0 0 var(--new-red);
-}
-
-#sectionA {
-    background: linear-gradient(rgba(255, 0, 0, 0.45), rgba(255, 0, 0, 0.45)),
-        url(images/brown-splash.jpg);
-    margin-top: 20px;
-    padding-bottom: 20px;
-    margin-bottom: 20px;
-}
-
-h1 {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-}
-
-h2 {
-    font-weight: 800;
-    font-family: "Open Sans", sans-serif;
-    font-size: 14px;
-}
-
-h3 {
-    font-family: "Open Sans", sans-serif;
-}
-
-p {
-    font-family: "Lato", sans-serif;
-}
-
-.navbar {
-    background-color: var(--new-red);
-    color: white;
-}
-
-.card {
-    border-color: black;
-    border-radius: 1px;
-}
-
-.fsab-button {
-    background-color: var(--accent-blue);
-}
-
-.navbar-brand {
-    animation: fadeDown 1000ms forwards;
+#top-navbar {
+    background-color: var(--fsab-red);
+    animation: fade-down 1000ms forwards;
     opacity: 0;
 }
 
+#fsab {
+    font-family: 'Roboto Slab', serif;
+    color: white;
+}
+
+@keyframes fade-down {
+    from {
+        opacity: 0;
+        transform: translateY(-1.25em);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0em);
+    }
+}
+
 .nav-item a {
+    color: white;
+    text-decoration: none;
+    margin-left: 1em;
+    margin-right: 1em;
+    font-family: 'Open Sans', sans-serif;
     transition: 0.1s;
 }
 
 .nav-item:hover {
-    color: black;
-    font-size: 30px;
+    font-size: 2em;
 }
 
-.fsab {
-    font-family: "Roboto Slab", serif;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Open Sans', sans-serif;
 }
 
-@keyframes fadeDown {
+h2 {
+    font-weight: 400;
+}
+
+p {
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+img {
+   border-radius: 0.25em; 
+}
+.card-img-top {
+    border-radius: 0px;
+}
+
+#about {
+    background: linear-gradient(
+        rgba(255, 0, 0, 0.45),
+        rgba(255, 0, 0, 0.45)),
+        url(images/brown-splash.jpg);
+    color: white;
+}
+
+#about-text {
+    animation: from-right 600ms forwards;
+    opacity: 0;
+    animation-delay: 600ms;
+}
+
+@keyframes from-right {
     from {
         opacity: 0;
-        transform: translateY(-20px);
+        transform: translateX(1.25em);
     }
     to {
         opacity: 1;
-        transform: translateY(0px);
+        transform: translateX(0em);
     }
 }
 
-.card-img {
-    height: 30%;
-    width: 30%;
+#about img {
+    animation: from-left 800ms forwards;
+    opacity: 0;
+    animation-delay: 400ms;
+}
+
+@keyframes from-left {
+    from {
+        opacity: 0;
+        transform: translateX(-1.25em);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0em);
+    }
+}
+
+#achievements {
+    margin-top: 2em;
+}
+
+#achievements a {
+    background-color: var(--fsab-brown);
+    border: var(--fsab-brown);
+    outline: none;
+    box-shadow: none;
+    font-family: 'Lato', sans-serif;
+    transition: ease-out 0.5s;
+    box-shadow: inset 0 0 0 0 var(--fsab-red);
+}
+
+#achievements a:hover{
+    background-color: var(--fsab-red);
+    box-shadow: inset 300px 0 0 0 var(--fsab-red);
 }
 
 #button-one {
-    background-color: var(--brown-brown);
-    border: none;
+    white-space: normal;
 }
 
-#button-two {
-    background-color: var(--brown-brown);
-    border: none;
+#jos-images img {
+    width: 12em;
+    height: 8em;
+    margin: 1em 2em 1em 2em;
+    object-fit: scale-up;
 }
 
-#button-three {
-    background-color: var(--brown-brown);
-    border: none;
-    outline: none;
-    transition: 0.4s;
+#jos-images {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin-left: 7%;
+    margin-right: 5%;
 }
 
-#button-three:hover {
-    background-color: var(--gold-yellow);
+#connect form {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
-#sectionA-img {
-    background-image: url(really%2520shitty%2520test%2520assets/Screen%20Shot%202019-01-13%20at%2011.04.04%20AM.png);
-    animation: fromLeft 800ms forwards;
-    animation-delay: 400ms;
-    opacity: 0;
-}
-
-@keyframes fromLeft {
-    from {
-        opacity: 0;
-        transform: translateX(-20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-#sectionA-txt {
-    animation: fromRight 800ms forwards;
-    animation-delay: 500ms;
-    opacity: 0;
-}
-
-@keyframes fromRight {
-    from {
-        opacity: 0;
-        transform: translateX(20px);
-    }
-    to {
-        opacity: 1;
-        transform: translateX(0px);
-    }
-}
-
-#sectionB {
-    animation: fadeIn 800ms forwards;
-    animation-delay: 600ms;
-    opacity: 0;
-}
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-#sectionC {
-    margin-left: 20%;
-    margin-right: 20%;
-}
-
-#feedback {
-    border-radius: 2px;
-}
-
-.feedback {
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.form-field {
-    border-radius: 1px;
+#connect input, textarea, button {
+    margin: 1em 20em 1em 20em;
+    width: 15em;
+    border-radius: 0.25em;
     border-style: dashed;
 }
 
-.feedback h3 {
-    margin-left: 25%;
-    margin-right: 25%;
+#connect textarea {
+    height: 10em;
 }
 
-.feedback input[type="text"] {
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    width: 400px;
-    outline: none;
-}
-
-.feedback textarea {
-    width: 400px;
-    height: 200px;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    outline: none;
-}
-
-.feedback button {
-    width: 400px;
+#connect button {
+    border-style: none;
+    background-color: var(--fsab-brown);
     color: white;
-    border: #007bff;
-    background-color: #007bff;
-    border-radius: 4px;
-    outline: none;
-    padding-left: 4px;
-    margin-left: 25%;
-    margin-right: 25%;
-    outline: none;
+    font-family: 'Lato', sans-serif;
+    transition: 0.3s;
 }
 
-#josimgs {
-    margin-right: 10%;
-    margin-left: 10%;
+#connect button:hover {
+    background-color: var(--fsab-gold);
 }
 
-.carb-info {
-    color: white;
-}
-
-.jos {
-    margin: 10px;
-    border-radius: 4px;
-    height: 100px;
-    width: 200px;
-}
-
-.watermark {
-    background-color: black;
-    color: white;
-    width: 100%;
-    text-align: center;
-    margin-bottom: -10px;
-    font-family: "Roboto Slab", serif;
-}
-
-.watermark a {
-    color: white;
-    text-decoration: none;
-}
-
-.watermark a:hover {
-    color: white;
-    text-decoration: none;
-}
